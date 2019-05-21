@@ -16,6 +16,13 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        'androidManifestFile': 'sample\\build\\intermediates\\merged_manifests\\debug\\processDebugManifest\\merged\\AndroidManifest.xml'
+                ]
+            }
+        }
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 3
